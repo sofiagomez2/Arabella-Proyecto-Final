@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Encargos</title>
+
+	<meta name="keywords" content="Encargos, Talles, Telas, Colores">
+	<meta name="desvription"
+		content="Acá vas a poder estar un paso más cerca de tener tu prenda Arabella totalmente personalizada, solo para vos!. ¿Qué estás esperando?.">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+	<link rel="stylesheet" href="estilos.css">
+
+	<link rel="shortcut icon" href="multimedia/una.png">
+
+
+
+
+</head>
+
+<body>
+
+	<header>
+		<nav class="animate_animated animate__bounceInLeft">
+			<ul class="menu">
+				<li>
+					<div class="animate_animated animate__heartBeat">
+						<a href="index.html" id="logo">Arabella</a>
+					</div>
+				</li><br>
+				<li>
+					<a href="index.html">Inicio</a>
+				</li>
+				<li>
+					<a href="encargos.html">Encargos</a>
+				</li>
+				<li>
+					<a href="productos.html">Productos</a>
+				</li>
+				<li>
+					<a href="cambios.html">Cambios</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<br>
+	<h2>Encargos</h2>
+	<p>Aca vas a poder ayudarnos a nosotrxs a saber como queres tu prenda Arabella</p>
+	<br>
+	<h2>Mas información</h2>
+	<p>Elegis la tela, los colores de tu buzo, y tu talle, por alguna razon queres algo que no aparece en nuestra
+		página, contactate con nosotrxs que te ayudamos</p>
+	<br>
+	<section class="encargos">
+		<article>
+			<p>
+				<button class="btn btn-dark" type="button" data-bs-toggle="collapse"
+					data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1"
+					id="collap">Extras</button>
+				<button class="btn btn-dark" type="button" data-bs-toggle="collapse"
+					data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExampl2"
+					id="collap">Proceso</button>
+				<button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+					aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"
+					id="collap">Cerrar</button>
+			</p>
+			<div class="row">
+				<div class="col">
+					<div class="collapse multi-collapse" id="multiCollapseExample1">
+						<div class="card card-body" id="collapse">
+							<p class="espe">Extra</p>
+							<p>Telas</p>
+							<p>Talles</p>
+							<p>Tiempos de entregas</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="collapse multi-collapse" id="multiCollapseExample2">
+						<div class="card card-body" id="collapse">
+							<p class="espe">Parte del proceso</p>
+							<p>Se encarga el buzo</p>
+							<p>Se corta y pinta el buzo</p>
+							<p>Se termina y envuelve</p>
+							<p>Llega a vos para que lo uses </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<h2>Tabla de talles</h2>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">Talles</th>
+					<th scope="col">Largo</th>
+					<th scope="col">Ancho</th>
+					<th scope="col">Manga</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>S</td>
+					<td>66cm</td>
+					<td>53cm</td>
+					<td>55cm</td>
+				</tr>
+				<tr>
+					<td>M</td>
+					<td>73cm</td>
+					<td>57cm</td>
+					<td>59cm</td>
+				</tr>
+				<tr>
+					<td>L</td>
+					<td>75cm</td>
+					<td>60cm</td>
+					<td>62cm</td>
+				</tr>
+				<tr>
+					<td>XL</td>
+					<td>76cm</td>
+					<td>62cm</td>
+					<td>65cm</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<br>
+	<br>
+	<section>
+		<h1>Formulario de encargos</h1>
+		<form class="formulario" action="enviar.phq" method="post" enctype="application/x-www-form-urlencoded">
+			<label for="name">Nombre completo</label>
+			<input type="text" name="name" placeholder="Colocar nombre completo">
+			<label for="email">Email</label>
+			<input type="email" name="email" required placeholder="Colocar email">
+			<label for="">Talle</label>
+			<select name="Talle" id="talles">
+				<option value="xs">XS</option>
+				<option value="s">S</option>
+				<option value="m">M</option>
+				<option value="l">L</option>
+				<option value="xl">XL</option>
+			</select>
+			<label for="phone">Celular</label>
+			<input type="tel" name="tel" placeholder="Celular">
+			<label for="comment">Descripcion del buzo</label>
+			<textarea name="Descripcion del buzo" cols="25" rows="10"
+				placeholder="Colores y más caracteristicas"></textarea>
+			<label for="produc">Ya tenes algún producto Arabella?</label>
+			<input type="checkbox"><br>
+			<button>enviar</button>
+		</form>
+	</section>
+	<br>
+	<br>
+	<footer>
+		<h2 class="ubicacion1">Ubicación</h2>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3338.618844529008!2d-60.47020358480718!3d-33.19786888084688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b70cb790d2d9a9%3A0x99071e49a40a015c!2sSaavedra%20456%2C%20Fighiera%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1634867065427!5m2!1ses-419!2sar"
+			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="ubicacion"></iframe>
+		<div class="contenedorf">
+			<h2>Redes sociales</h2>
+			<a href="https://www.instagram.com/arabellaa.ind/">
+				<img src="multimedia/instagram.png" class="redes" alt="instagram">
+			</a>
+
+			<a href="https://wa.me/c/5493402504639">
+				<img src="multimedia/whatsapp.png" class="redes" alt="whatsapp">
+			</a>
+
+			<a href="https://www.facebook.com/">
+				<img src="multimedia/facebook (1).png" class="redes" alt="facebook">
+			</a>
+
+			<a href="https://mail.google.com/">
+				<img src="multimedia/gmail (3).png" class="redes" alt="gmail">
+			</a>
+
+			<a href="https://twitter.com/?lang=es">
+				<img src="multimedia/twitter (1).png" class="redes" alt="twitter">
+			</a>
+		</div>
+		<div class="CF">
+			<a class="contacto" href="contacto.html">Contactate con nosotros ;)</a>
+		</div>
+	</footer>
+
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+		integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+		integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>
